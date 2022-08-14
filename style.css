@@ -1,0 +1,32 @@
+.col-12 {
+    text-align: center;
+    background-color: rgb(182, 232, 255);
+    border-style: solid;
+}
+
+button {
+    width: auto;
+}
+
+.col-9 {
+    outline: black;
+}
+
+ul {
+    list-style: inside;
+}
+li {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: azure;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.five-day {
+    text-align: left;
+}
