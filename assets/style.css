@@ -1,6 +1,6 @@
 .col-9 {
     text-align: center;
-    background-color: rgba(139, 207, 218, 0.529);
+    background-color: rgba(180, 236, 255, 0.529);
     border-style: solid;
 }
 
@@ -9,7 +9,7 @@ button {
 }
 
 .col-12 {
-    outline: rgb(0, 0, 0);
+    outline: rgba(0, 0, 0, 0.529);
 }
 
 ul {
@@ -20,7 +20,7 @@ li {
 }
 
 .card {
-    background-color: rgb(69, 172, 172);
+    background-color: rgb(107, 186, 255);
 }
 img {
     height: 50px;
