@@ -1,6 +1,6 @@
 .col-9 {
     text-align: center;
-    background-color: rgba(174, 211, 227, 0.529);
+    background-color: rgba(139, 207, 218, 0.529);
     border-style: solid;
 }
 
@@ -20,7 +20,7 @@ li {
 }
 
 .card {
-    background-color: rgb(84, 86, 86);
+    background-color: rgb(69, 172, 172);
 }
 img {
     height: 50px;
@@ -32,7 +32,7 @@ img {
 }
 
 #card {
-    background-color: rgb(211, 211, 220);
+    background-color: rgba(0, 0, 0, 0.11);
 }
 
 .forecast {
