@@ -1,6 +1,6 @@
-.col-12 {
+.col-9 {
     text-align: center;
-    background-color: rgb(182, 232, 255);
+    background-color: rgba(174, 211, 227, 0.529);
     border-style: solid;
 }
 
@@ -8,8 +8,8 @@ button {
     width: auto;
 }
 
-.col-9 {
-    outline: black;
+.col-12 {
+    outline: rgb(0, 0, 0);
 }
 
 ul {
@@ -20,7 +20,7 @@ li {
 }
 
 .card {
-    background-color: azure;
+    background-color: rgb(84, 86, 86);
 }
 img {
     height: 50px;
@@ -32,7 +32,7 @@ img {
 }
 
 #card {
-    background-color: blue;
+    background-color: rgb(211, 211, 220);
 }
 
 .forecast {
