@@ -7,3 +7,12 @@ searchBtnEl.addEventListener("click", function () {
 
     getGeoLocation(inputEl.value)
 });
+
+function getGeoLocation(cityname) {
+    const geoUrl = "http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=5&appid=${apikey}";
+    fetch(geoUrl)
+    .then(res => res.json())
+    .then(geoData => {
+        console.log("data",geoData);
+    }
+}
