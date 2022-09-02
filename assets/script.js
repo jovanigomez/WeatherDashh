@@ -28,14 +28,15 @@ function getGeoLocation(cityname) {
             document.getElementById("span-hum").innerText = data.current.humidity + "%";
             document.getElementById("span-uv").innerText = data.current.uvi;
             document.getElementById("img-icon").src = `https://openweathermap.org/img/w/${data?.current?.weather[0]?.icon}.png`;
-            uviColor(data);
+            //uviColor(data);
             fiveDayForecast(data);
 
         });
 
     })
-       .catch(err => console.error(err));
+    .catch(err => console.error(err));
 }
+
 
 function fiveDayForecast(data) {
     for (i = 0; i <=4; i++) {
@@ -43,7 +44,7 @@ function fiveDayForecast(data) {
         console.log(daily);
         const forecastEl = document.getElementById("forecast-section");
         const divEl = document.createElement("div");
-        divEl.setAttribute("id,i");
+        divEl.setAttribute("id", i);
         divEl.setAttribute("class", "card");
         const dataEl = document.createElement("p");
         dataEl.innerText = moment.unix(daily[i].dt).format('MM/DD/YY');
@@ -53,6 +54,15 @@ function fiveDayForecast(data) {
         const tempEl = document.createElement("p");
         tempEl.innerText = "temp:" + daily[i].temp.day + "F";
         const windEl = document.createElement("p");
-        windEl.innerText = "wind:" = daily[i]
+        windEl.innerText = "Wind:" + daily[i].wind_speed + "MPH:";
+        const humidityEl = document.createElement("p");
+        humidityEl.innerText = "Humidity:" + daily[i].humidity + "%";
+        divEl.appendChild(dataEl);
+        divEl.appendChild(image);
+        divEl.appendChild(tempEl);
+        divEl.appendChild(windEl);
+        divEl.appendChild(humidityEl);
+        forecastEl.appendChild(divEl);
+    
     }
 }
