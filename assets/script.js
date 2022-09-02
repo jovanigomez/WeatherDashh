@@ -29,7 +29,7 @@ function getGeoLocation(cityname) {
             document.getElementById("span-uv").innerText = data.current.uvi;
             document.getElementById("img-icon").src = `https://openweathermap.org/img/w/${data?.current?.weather[0]?.icon}.png`;
             uviColor(data);
-            fiveDayForcast(data);
+            fiveDayForecast(data);
 
         });
 
@@ -37,5 +37,22 @@ function getGeoLocation(cityname) {
        .catch(err => console.error(err));
 }
 
-
-
+function fiveDayForecast(data) {
+    for (i = 0; i <=4; i++) {
+        const daily = data.daily;
+        console.log(daily);
+        const forecastEl = document.getElementById("forecast-section");
+        const divEl = document.createElement("div");
+        divEl.setAttribute("id,i");
+        divEl.setAttribute("class", "card");
+        const dataEl = document.createElement("p");
+        dataEl.innerText = moment.unix(daily[i].dt).format('MM/DD/YY');
+        const image = document.createElement('img')
+        const iconPic = data.daily[i].weather[0].icon;
+        image.src = "https://openweathermap.org/img/w/" + iconPic + ".png";
+        const tempEl = document.createElement("p");
+        tempEl.innerText = "temp:" + daily[i].temp.day + "F";
+        const windEl = document.createElement("p");
+        windEl.innerText = "wind:" = daily[i]
+    }
+}
