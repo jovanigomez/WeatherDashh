@@ -9,7 +9,7 @@ searchBtnEl.addEventListener("click", function () {
 });
 
 function getGeoLocation(cityname) {
-    const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=5&appid=${apikey}`;
+    const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=5&appid=${apikey}`;
     fetch(geoUrl)
     .then(res => res.json())
     .then(geoData => {
