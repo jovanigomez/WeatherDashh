@@ -23,7 +23,7 @@ function getGeoLocation(cityname) {
             console.log(data);
             const daily = data.daily;
             document.getElementById("city-name").innerText = cityname + " " + moment.unix(daily[0].dt).format('MM/DD/YY');
-            document.getElementById("span-city").innerText = data.current.temp + "F";
+            document.getElementById("span-temp").innerText = data.current.temp + "F";
             document.getElementById("span-wind").innerText = data.current.wind_speed + "MPH";
             document.getElementById("span-hum").innerText = data.current.humidity + "%";
             document.getElementById("span-uv").innerText = data.current.uvi;
