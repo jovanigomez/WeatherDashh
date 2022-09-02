@@ -1,6 +1,6 @@
 # WeatherDashh
 
-## Acceptance Criteria
+## Acceptance Criteria:
 
 ```
 GIVEN a weather dashboard with form inputs
@@ -15,3 +15,11 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+# ScreenShot:
+![WeatherDashh.png](./assets/WeatherDashh.png)
+
+# Links:
+
+* https://github.com/jovanigomez/WeatherDashh
+
+* https://jovanigomez.github.io/WeatherDashh/
